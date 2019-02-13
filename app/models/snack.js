@@ -1,7 +1,8 @@
 export default class Snack {
   //code here.
-  constructor() {
-    this.price = 0;
-    this.image = '';
+  constructor(name, price, imageURL) {
+    this.name = name
+    this.price = price;
+    this.image = imageURL;
   }
 }

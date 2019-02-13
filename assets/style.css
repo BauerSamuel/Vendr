@@ -1,0 +1,20 @@
+#retrieve{
+  margin-top: 10vh;
+  margin-bottom:5vh;
+  height: 200px;
+  background-color: darkgrey;
+}
+
+#snackImg:hover{
+  border: 2;
+  border-color: white;
+  cursor: pointer;
+}
+
+#snacks{
+  margin-top: 10vh;
+}
+
+.bg-color{
+  background-color: grey;
+}

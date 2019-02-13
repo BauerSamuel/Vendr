@@ -5,12 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
   <title>Vendr</title>
 </head>
 
-<body>
+<body class="bg-color">
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Want a snack?</h1>
+      </div>
+    </div>
+    <div id="snacks" class="row text-center">
+      <div id="snack0" class="col-md-4 col-sm-12">
+        <img id="snackImg" onclick="app.controllers.vendrController.Vend('a1')" src="assets/images/Chips.png" />
+        <h1>$1.50</h1>
+      </div>
+      <div id="snack1" class="col-md-4 col-sm-12">
+        <img id="snackImg" onclick="app.controllers.vendrController.Vend('a2')" src="assets/images/Candy.png" />
+        <h1>$2.00</h1>
+      </div>
+      <div id="snack2" class="col-md-4 col-sm-12">
+        <img id="snackImg" onclick="app.controllers.vendrController.Vend('a3')" src="assets/images/Choc.png" />
+        <h1>$1.75</h1>
+      </div>
+    </div>
+  </section>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Balance: $<span id="bal">__</span></h1>
+      <button onclick="app.controllers.vendrController.addQuarter()">Add a Quarter</button>
+    </div>
+    <div class="col-12 text-center">
+      <h3>Message: </h3><span id="message"></span>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div id="retrieve" class="col-md-4 offset-md-4  col-sm-12 offset-sm-0 text-center">
 
+    </div>
+
+  </div>
 
   <script type="module" src="app/main.js"></script>
 </body>
