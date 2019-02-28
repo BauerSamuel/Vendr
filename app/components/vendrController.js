@@ -22,11 +22,14 @@ export default class VendrController {
   Vend(snack) {
     if (vendrService.Vend(snack)) {
       document.getElementById('message').innerText = 'Enjoy your snack!'
-      document.getElementById('retrieve').innerHTML = `<img src="${vendrService.getImage(snack)}" alt="The snack you chose" />`
+      document.getElementById('retrieve').innerHTML = `<img onclick="app.controllers.vendrController.Take()" src="${vendrService.getImage(snack)}" alt="The snack you chose" />`
     } else {
       document.getElementById('message').innerText = 'Not enough funds. Please insert more money.'
     }
     draw();
+  }
+  Take() {
+    document.getElementById('retrieve').innerHTML = ``
   }
 }
 
